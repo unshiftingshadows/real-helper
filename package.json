@@ -2,12 +2,13 @@
   "name": "real-helper",
   "version": "0.1.0",
   "private": true,
-  "main": "./dist/real-helper.common.js",
+  "main": "./src/components/ContentEditor.vue",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-bundle": "vue-cli-service build --target lib --name real-helper ./src/components/index.js"
+    "build-bundle": "vue-cli-service build --target lib --name real-helper ./src/components/ContentEditor.vue",
+    "build-wc": "vue-cli-service build --target wc --name real-helper 'src/main.js'"
   },
   "dependencies": {
     "quasar-extras": "^2.0.4",

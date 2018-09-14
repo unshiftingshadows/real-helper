@@ -187,7 +187,7 @@ export default {
       if (this.data.type === 'bible') {
         this.loading = true
         // TODO: Fix later...
-        console.log('bible save')
+        // console.log('bible save')
         this.loading = false
         // this.$database.bible(this.data.bibleRef, this.translation, (data) => {
         //   console.log(data)

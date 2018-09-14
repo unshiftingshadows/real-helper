@@ -119,7 +119,7 @@ export default {
       type: String,
       required: true,
       validator: (value) => {
-        return contentTypes.includes(value) || mediaTypes.includes(value)
+        return this.contentTypes.includes(value) || this.mediaTypes.includes(value)
       }
     },
     contentid: {

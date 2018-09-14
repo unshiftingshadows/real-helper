@@ -58,7 +58,7 @@ export default {
         this.save()
       }
     })
-    this.$refs.vueeditor.quill.on('text-change', (delta, oldDelta, source) => {
+    this.$refs.vueeditor.quill.on('text-change', (delta, oldDelta) => {
       if (this.editCount >= 100) {
         this.editCount = 0
         this.save()
