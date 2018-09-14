@@ -1,8 +1,6 @@
 import Vue from 'vue'
-import App from './App.vue'
+import wrap from '@vue/web-component-wrapper'
 
-Vue.config.productionTip = false
+const ContentEditor = wrap(Vue, () => import('./components/ContentEditor.vue'))
 
-new Vue({
-  render: h => h(App)
-}).$mount('#app')
+window.customElements.define('my-custom-element', ContentEditor)
